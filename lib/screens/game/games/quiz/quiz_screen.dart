@@ -3,6 +3,7 @@ import 'package:atalias_game/game_manager.dart';
 import 'package:atalias_game/screens/game/game_result_score_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:provider/provider.dart';
 
 class QuizScreen extends StatefulWidget {
   const QuizScreen({super.key});
@@ -49,12 +50,12 @@ class _QuizScreenState extends State<QuizScreen> {
   ];
   int currentQuestionIndex = 0;
   String answer = '';
-  void nextQuestion() {
+  void nextQuestion(BuildContext context) {
     checkAnswer();
     setState(() {
       currentQuestionIndex++;
     });
-    checkIfQuizIsOver();
+    checkIfQuizIsOver(context);
   }
 
   void resetQuiz() {
@@ -77,9 +78,11 @@ class _QuizScreenState extends State<QuizScreen> {
     print('score is $score');
   }
 
-  void checkIfQuizIsOver() {
+  void checkIfQuizIsOver(BuildContext context) {
     if (currentQuestionIndex == quiz.length) {
-      gameManager.setGameFinished('translate');
+      setState(() {
+        context.read<GameManager>().setGameFinished('translate');
+      });
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
         return GameResultScoreScreen(score: score);
       }));
@@ -91,6 +94,7 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text('Quiz'),
       ),
       persistentFooterButtons: [
@@ -98,7 +102,7 @@ class _QuizScreenState extends State<QuizScreen> {
           width: MediaQuery.of(context).size.width,
           child: ElevatedButton(
             onPressed: () {
-              nextQuestion();
+              nextQuestion(context);
             },
             child: const Text('Próxima pergunta'),
           ),
@@ -112,7 +116,7 @@ class _QuizScreenState extends State<QuizScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 62),
               child: Column(
                 children: <Widget>[
-                  //a bar to show the progress of the quiz
+                  const SizedBox(height: 16),
                   ProgressBar(currentQuestionIndex: currentQuestionIndex, length: quiz.length),
                   const SizedBox(height: 16),
                   Card(

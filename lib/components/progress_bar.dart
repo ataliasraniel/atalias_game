@@ -11,14 +11,10 @@ class ProgressBar extends StatelessWidget {
       return currentQuestionIndex / length;
     }
 
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(16),
-      child: LinearProgressIndicator(
-        value: getProgressBarValue(),
-        backgroundColor: Colors.grey,
-        color: Colors.deepPurple,
-      ),
+    return LinearProgressIndicator(
+      value: getProgressBarValue(),
+      backgroundColor: Colors.grey,
+      color: Colors.deepPurple,
     );
   }
 }

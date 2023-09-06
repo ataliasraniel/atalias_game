@@ -1,4 +1,6 @@
+import 'package:atalias_game/game_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 
 class GameResultScoreScreen extends StatefulWidget {
   const GameResultScoreScreen({super.key, required this.score});
@@ -9,6 +11,13 @@ class GameResultScoreScreen extends StatefulWidget {
 }
 
 class _GameResultScoreScreenState extends State<GameResultScoreScreen> {
+  final GameManager gameManager = GetIt.I<GameManager>();
+  @override
+  void initState() {
+    gameManager.addScore(widget.score);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
