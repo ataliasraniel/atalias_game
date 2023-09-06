@@ -17,11 +17,6 @@ class _SelectGameScreenState extends State<SelectGameScreen> {
 
   final List<Map<String, dynamic>> questions = [
     {
-      "original_phrase": "What does the fox say?",
-      "answer_options": ["What does the bear say?", "What does the cat say?", "What does the dog say?", "What does the fox say?"],
-      "correct_answer": "What does the fox say?"
-    },
-    {
       "original_phrase": "And the elephant goes 'toot'",
       "answer_options": [
         "And the elephant says 'toot'",
@@ -30,6 +25,25 @@ class _SelectGameScreenState extends State<SelectGameScreen> {
         "And the elephant says 'moo'"
       ],
       "correct_answer": "And the elephant goes 'toot'"
+    },
+    {
+      "original_phrase": "Bu there's one sound That no one knows",
+      "answer_options": [
+        "Bu there's one sound That no one knows",
+        "Bu there's one sound That no one hears",
+        "Bu there's one sound That no one sees",
+        "Bu there's one sound That no one feels"
+      ],
+    },
+    {
+      "original_phrase": "What does the fox say?",
+      "answer_options": [
+        "What do the fox say?",
+        "What does the cat say?",
+        "What does the fox says?",
+        "What does the fox say?",
+      ],
+      "correct_answer": "What does the fox say?"
     },
     {
       "original_phrase": "The secret of the fox Ancient mystery",
@@ -71,46 +85,6 @@ class _SelectGameScreenState extends State<SelectGameScreen> {
       ],
       "correct_answer": "You're my guardian angel Hiding in the woods"
     },
-    {
-      "original_phrase": "What is your sound? Will we ever know?",
-      "answer_options": [
-        "What is your secret? Will we ever learn?",
-        "What is your favorite food? Will we ever find out?",
-        "What is your color? Will we ever discover?",
-        "What is your sound? Will we ever know?"
-      ],
-      "correct_answer": "What is your sound? Will we ever know?"
-    },
-    {
-      "original_phrase": "You're my guardian angel Hiding in the woods",
-      "answer_options": [
-        "You're my secret agent Hiding in the city",
-        "You're my guiding star Hiding in the ocean",
-        "You're my shining light Hiding in the sky",
-        "You're my guardian angel Hiding in the woods"
-      ],
-      "correct_answer": "You're my guardian angel Hiding in the woods"
-    },
-    {
-      "original_phrase": "What is your sound? Will we ever know?",
-      "answer_options": [
-        "What is your secret? Will we ever learn?",
-        "What is your favorite food? Will we ever find out?",
-        "What is your color? Will we ever discover?",
-        "What is your sound? Will we ever know?"
-      ],
-      "correct_answer": "What is your sound? Will we ever know?"
-    },
-    {
-      "original_phrase": "You're my guardian angel Hiding in the woods",
-      "answer_options": [
-        "You're my secret agent Hiding in the city",
-        "You're my guiding star Hiding in the ocean",
-        "You're my shining light Hiding in the sky",
-        "You're my guardian angel Hiding in the woods"
-      ],
-      "correct_answer": "You're my guardian angel Hiding in the woods"
-    }
   ];
 
   int currentQuestionIndex = 0;
