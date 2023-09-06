@@ -29,9 +29,9 @@ class _TranslateGameScreenState extends State<TranslateGameScreen> {
     {
       "original_phrase": "Wait for them to ask you who you know",
       "answer_options": [
-        "Espere que eles perguntem quem você conhece",
         "Espere que eles perguntem o que você sabe",
         "Espere que eles perguntem onde você está",
+        "Espere que eles perguntem quem você conhece",
         "Espere que eles perguntem por que você está aqui"
       ],
       "correct_answer": "Espere que eles perguntem quem você conhece"
@@ -39,8 +39,8 @@ class _TranslateGameScreenState extends State<TranslateGameScreen> {
     {
       "original_phrase": "Please don't make any sudden moves",
       "answer_options": [
-        "Por favor, não faça movimentos repentinos",
         "Por favor, faça muitos movimentos",
+        "Por favor, não faça movimentos repentinos",
         "Por favor, evite fazer qualquer movimento",
         "Por favor, dance com movimentos suaves"
       ],
@@ -49,19 +49,19 @@ class _TranslateGameScreenState extends State<TranslateGameScreen> {
     {
       "original_phrase": "You don't know the half of the abuse",
       "answer_options": [
-        "Você não conhece metade do abuso",
         "Você não sabe o que acontece",
         "Você não entende o que significa",
         "Você não tem ideia do que está acontecendo"
+            "Você não conhece metade do abuso",
       ],
       "correct_answer": "Você não conhece metade do abuso"
     },
     {
       "original_phrase": "Welcome to the room of people",
       "answer_options": [
-        "Bem-vindo à sala das pessoas",
         "Bem-vindo à festa das pessoas",
         "Bem-vindo ao clube das pessoas",
+        "Bem-vindo à sala das pessoas",
         "Bem-vindo à casa das pessoas"
       ],
       "correct_answer": "Bem-vindo à sala das pessoas"
@@ -69,8 +69,8 @@ class _TranslateGameScreenState extends State<TranslateGameScreen> {
     {
       "original_phrase": "Who have rooms of people that they loved one day",
       "answer_options": [
-        "Que têm quartos de pessoas que eles amaram um dia",
         "Que têm amigos que eles amaram um dia",
+        "Que têm quartos de pessoas que eles amaram um dia",
         "Que têm memórias de pessoas que eles amaram um dia",
         "Que têm histórias de pessoas que eles amaram um dia"
       ],
@@ -78,38 +78,42 @@ class _TranslateGameScreenState extends State<TranslateGameScreen> {
     },
     {
       "original_phrase": "Docked away",
-      "answer_options": ["Ancorado longe", "Escondido", "Partiu", "Afundou"],
+      "answer_options": [
+        "Ancorado longe",
+        "Escondido",
+        "Afundou",
+        "Partiu",
+      ],
       "correct_answer": "Ancorado longe"
     },
     {
-      "original_phrase": "Just because we check the guns at the door",
+      "original_phrase": "They say they can smell your intentions",
       "answer_options": [
-        "Só porque verificamos as armas na porta",
-        "Só porque escondemos as armas na porta",
-        "Só porque levamos as armas conosco",
-        "Só porque deixamos as armas na porta"
+        "Eles dizem que podem ver suas intenções",
+        "Eles dizem que podem sentir suas intenções",
+        "Eles dizem que podem sentir o cheiro das suas intenções",
+        "Eles dizem que podem ler suas intenções"
       ],
-      "correct_answer": "Só porque verificamos as armas na porta"
+      "correct_answer": "Eles dizem que podem sentir suas intenções"
     },
     {
-      "original_phrase": "Doesn't mean our brains will change from hand grenades",
+      "original_phrase": "We don't deal with outsiders very well",
       "answer_options": [
-        "Não significa que nossos cérebros mudarão de granadas",
-        "Não significa que nossas mentes explodirão com granadas",
-        "Não significa que nossas cabeças se transformarão em granadas",
-        "Não significa que nossa inteligência se tornará granadas"
+        "Nós não lidamos muito bem com estranhos",
+        "Nós não lidamos muito bem com pessoas de fora",
+        "Nós não acompanhamos muito bem pessoas de fora",
+        "Nós gostamos bastante de pessoas desconhecidas",
       ],
-      "correct_answer": "Não significa que nossos cérebros mudarão de granadas"
+      "correct_answer": "Nós não lidamos muito bem com pessoas de fora"
     },
     {
-      "original_phrase": "You'll never know the psychopath sitting next to you",
+      "original_phrase": "I tried to warn you just to stay away",
       "answer_options": [
-        "Você nunca conhecerá o psicopata sentado ao seu lado",
-        "Você nunca entenderá o psicopata sentado ao seu lado",
-        "Você nunca verá o psicopata sentado ao seu lado",
-        "Você nunca sentirá o psicopata sentado ao seu lado"
+        "Eu tentei avisar você para ficar longe",
+        "Eu tentei te auxiliar para ficar",
+        "Eu tentei te ajudar para ficar",
+        "Eu tentei aquecer você para ficar"
       ],
-      "correct_answer": "Você nunca conhecerá o psicopata sentado ao seu lado"
     }
   ];
 

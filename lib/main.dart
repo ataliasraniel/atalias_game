@@ -1,5 +1,5 @@
 import 'package:atalias_game/screens/all_score_screen/all_score_screen.dart';
-import 'package:atalias_game/screens/complete/complete_game_screen.dart';
+import 'package:atalias_game/screens/game/games/complete/complete_game_screen.dart';
 import 'package:atalias_game/screens/game/game_selection/game_selection_screen.dart';
 import 'package:atalias_game/screens/game/games/quiz/quiz_screen.dart';
 import 'package:atalias_game/screens/game/games/select_frase/select_frase_game.dart';

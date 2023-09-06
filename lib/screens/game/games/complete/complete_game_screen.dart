@@ -23,52 +23,102 @@ class _CompleteGameScreenState extends State<CompleteGameScreen> {
     },
     {
       "incomplete_phrase": "Meant for someone else but not for _______",
-      "answer_options": ["you", "us", "them", "me"],
+      "answer_options": [
+        "you",
+        "me",
+        "us",
+        "them",
+      ],
       "correct_answer": "me"
     },
     {
       "incomplete_phrase": "Love was out to get _______",
-      "answer_options": ["happiness", "joy", "me", "trouble"],
+      "answer_options": [
+        "me",
+        "happiness",
+        "trouble",
+        "joy",
+      ],
       "correct_answer": "me"
     },
     {
       "incomplete_phrase": "Disappointment haunted all my _______",
-      "answer_options": ["days", "nights", "dreams", "thoughts"],
+      "answer_options": [
+        "days",
+        "nights",
+        "dreams",
+        "thoughts",
+      ],
       "correct_answer": "dreams"
     },
     {
       "incomplete_phrase": "Then I saw her face, now I'm a _______",
-      "answer_options": ["dreamer", "lover", "singer", "believer"],
+      "answer_options": [
+        "dreamer",
+        "believer",
+        "lover",
+        "singer",
+      ],
       "correct_answer": "believer"
     },
     {
       "incomplete_phrase": "Not a trace of doubt in my _______",
-      "answer_options": ["head", "heart", "soul", "mind"],
+      "answer_options": [
+        "head",
+        "heart",
+        "mind",
+        "soul",
+      ],
       "correct_answer": "mind"
     },
     {
       "incomplete_phrase": "I'm in love, I'm a _______",
-      "answer_options": ["fighter", "dreamer", "lover", "believer"],
+      "answer_options": [
+        "fighter",
+        "dreamer",
+        "lover",
+        "believer",
+      ],
       "correct_answer": "believer"
     },
     {
       "incomplete_phrase": "I couldn't leave her if I _______",
-      "answer_options": ["tried", "cried", "lied", "died"],
+      "answer_options": [
+        "tried",
+        "cried",
+        "lied",
+        "died",
+      ],
       "correct_answer": "tried"
     },
     {
       "incomplete_phrase": "I thought love was more or less a givin' _______",
-      "answer_options": ["thing", "ring", "wing", "sing"],
+      "answer_options": [
+        "thing",
+        "ring",
+        "wing",
+        "sing",
+      ],
       "correct_answer": "thing"
     },
     {
       "incomplete_phrase": "Seems the more I gave the less I _______",
-      "answer_options": ["wanted", "needed", "got", "sought"],
+      "answer_options": [
+        "wanted",
+        "needed",
+        "got",
+        "sought",
+      ],
       "correct_answer": "got"
     },
     {
       "incomplete_phrase": "What's the use in trying? All you get is _______",
-      "answer_options": ["joy", "rain", "pain", "play"],
+      "answer_options": [
+        "joy",
+        "rain",
+        "pain",
+        "play",
+      ],
       "correct_answer": "pain"
     }
   ];
@@ -96,7 +146,6 @@ class _CompleteGameScreenState extends State<CompleteGameScreen> {
     setState(() {
       answer = value;
     });
-    print(answer);
   }
 
   void checkAnswer() {
